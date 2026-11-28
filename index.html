@@ -761,7 +761,7 @@ try{
 }catch(e){}
 
 try{
-  for(const [batchKey,prefix] of [['shici-batch-2026-10-24','oct24-'],['shici-batch-housing-v1','housing-'],['shici-batch-oct31-v1','oct31-'],['shici-batch-nov07-v1','nov07-'],['shici-batch-nov22-v1','nov22-']]){
+  for(const [batchKey,prefix] of [['shici-batch-2026-10-24','oct24-'],['shici-batch-housing-v1','housing-'],['shici-batch-oct31-v1','oct31-'],['shici-batch-nov07-v1','nov07-'],['shici-batch-nov22-v1','nov22-'],['shici-batch-nov28-v1','nov28-']]){
     const addBatch=localStorage.getItem(batchKey)!=='done';
     entries=Wordbook.mergeVocabulary(entries,window.SEED,window.SEED.filter(e=>e.id.startsWith(prefix)),addBatch);
     if(save(false))localStorage.setItem(batchKey,'done');

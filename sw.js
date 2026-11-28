@@ -1,4 +1,4 @@
-const CACHE_NAME = 'shici-wordbook-cache-v2';
+const CACHE_NAME = 'shici-wordbook-cache-v3';
 const CORE_ASSETS = ['./', './index.html', './seed.js', './manifest.json', './apple-touch-icon.png', './icon.svg'];
 
 self.addEventListener('install', event => {
